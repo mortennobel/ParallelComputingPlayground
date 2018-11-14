@@ -16,7 +16,7 @@
 using namespace std;
 
 #ifndef NO_CPP11
-RGB *MandelbrotCpp11Thread::createData(int width, int height){
+void *MandelbrotCpp11Thread::createData(int width, int height){
     RGB * res = new RGB[width * height];
     
     // create a function object that computes a subsection of the mandelbrot

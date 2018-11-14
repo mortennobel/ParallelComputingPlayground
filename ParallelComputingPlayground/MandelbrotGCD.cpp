@@ -14,7 +14,7 @@ using namespace std;
 
 #ifndef NO_CPP11
 
-RGB *MandelbrotGCD::createData(int width, int height){
+void *MandelbrotGCD::createData(int width, int height){
     RGB * res = new RGB[width * height];
     
     // create a block that computes a subsection of the mandelbrot

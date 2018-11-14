@@ -24,7 +24,7 @@ cl_context CreateContext();
 cl_command_queue CreateCommandQueue(cl_context, cl_device_id*);
 cl_program CreateProgram(cl_context context, cl_device_id device, const char* fileName);
 
-RGB *MandelbrotOpenCL::createData(int width, int height){
+void *MandelbrotOpenCL::createData(int width, int height){
     cl_context context = nullptr;
     cl_command_queue commandQueue = nullptr;
     cl_program program = nullptr;

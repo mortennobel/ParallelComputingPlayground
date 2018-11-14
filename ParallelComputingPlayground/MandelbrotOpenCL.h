@@ -16,7 +16,7 @@
 class MandelbrotOpenCL : public AbstractMandelbrot {
 public:
 #ifndef NO_OPENCL
-    virtual RGB *createData(int width, int height);
+    void *createData(int width, int height) override;
 #endif
 };
 

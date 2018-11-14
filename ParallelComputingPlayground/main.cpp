@@ -15,7 +15,8 @@
 #include "MandelbrotOpenMP.h"
 #include "MandelbrotPOSIXThread.h"
 #include "MandelbrotOpenCL.h"
-
+#include "MandelbrotMetal.h"
+#include "MandelbrotSequential.h"
 
 using namespace std;
 
@@ -29,6 +30,7 @@ int main(int argc, char * argv[])
     cout << "4. OpenMP" << endl;
     cout << "5. POSIX Threads" << endl;
     cout << "6. OpenCL" << endl;
+    cout << "7. Metal" << endl;
     unsigned char s;
     cin >> s;
     
@@ -54,8 +56,12 @@ int main(int argc, char * argv[])
             res = new MandelbrotOpenCL();
             cout << "OpenCL"<<endl;
             break;
+        case '7':
+            res = new MandelbrotMetal();
+            cout << "Metal"<<endl;
+            break;
         default:
-            res = new AbstractMandelbrot();
+            res = new MandelbrotSequential();
             cout << "Sequential"<<endl;
             break;
     }
@@ -63,7 +69,7 @@ int main(int argc, char * argv[])
     int size = 500;
     void *data = res->createData(size, size);
     
-    ResultWindow(argc, argv, data, size, size);
+    ResultWindow(argc, argv, data, size, size, res->alignmentInBytes()==4);
     
 
     return 0;

@@ -13,7 +13,7 @@
 
 class ResultWindow {
 public:
-    ResultWindow(int &argc, char ** argv, void *data, int width, int height);
+    ResultWindow(int &argc, char ** argv, void *data, int width, int height, bool rgba);
 };
 
 #endif /* defined(__ParallelComputingPlayground__ResultWindow__) */

@@ -13,17 +13,6 @@ int AbstractMandelbrot::mandel_iterations = 1024;
 
 const float colorResolution = 8.0f; // how many iterations the first color band should use (2nd use the double amount)
 
-RGB *AbstractMandelbrot::createData(int width, int height){
-    RGB * res = new RGB[width * height];
-    for (int y=0;y<height;y++){
-        for (int x=0;x<width;x++){
-            RGB color = computePixel(x,y, width, height);
-            res[y*width+x] = color;
-        }
-    }
-    return res;
-}
-
 RGB getColorByIndex(float index){
 	float i = fmod(index,4.0f);
 	if (i < 0.5) {
@@ -44,6 +33,10 @@ RGB mix(RGB x, RGB y, float a){
         (unsigned char)round(x.g*(1-a)+y.g*a),
         (unsigned char)round(x.b*(1-a)+y.b*a)
     );
+}
+
+int AbstractMandelbrot::alignmentInBytes(){
+    return 3;
 }
 
 RGB AbstractMandelbrot::computePixel(int x, int y, int width, int height){

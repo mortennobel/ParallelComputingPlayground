@@ -41,7 +41,7 @@ RGB MandelbrotPOSIXThread::computePixelPublic(int x, int y, int width, int heigh
     return computePixel(x, y, width, height);
 }
 
-RGB *MandelbrotPOSIXThread::createData(int width, int height){
+void *MandelbrotPOSIXThread::createData(int width, int height){
     
     int numberOfThreads = (int)sysconf( _SC_NPROCESSORS_ONLN );
     pthread_t *threads = new pthread_t[numberOfThreads];

@@ -15,7 +15,7 @@
 
 class MandelbrotPOSIXThread : public AbstractMandelbrot {
 public:
-    virtual RGB *createData(int width, int height);
+    void *createData(int width, int height) override;
     
     RGB computePixelPublic(int x, int y, int width, int height);
 };

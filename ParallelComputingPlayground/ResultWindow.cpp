@@ -16,7 +16,6 @@ using namespace std;
 
 #define check_gl_error() _check_gl_error(__FILE__,__LINE__)
 
-
 GLuint textureId;
 
 void _check_gl_error(const char *file, int line) {
@@ -39,6 +38,9 @@ void _check_gl_error(const char *file, int line) {
 }
 
 void displayCall(){
+    glutReshapeWindow(500, 501); // back screen workaround
+    glutPostRedisplay();
+    
     glBegin (GL_QUADS);
     glTexCoord2d(0.0,0.0);
     glVertex2d(-1.0,-1.0);
@@ -53,7 +55,7 @@ void displayCall(){
     check_gl_error();
 }
 
-void createTexture(void *data, int width, int height){
+void createTexture(void *data, int width, int height, bool rgba){
     glEnable(GL_TEXTURE_2D);
     glGenTextures(1, &textureId);
     glBindTexture(GL_TEXTURE_2D, textureId);
@@ -62,7 +64,8 @@ void createTexture(void *data, int width, int height){
     glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     glTexParameteri (GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-    glTexImage2D (GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    
+    glTexImage2D (GL_TEXTURE_2D, 0, rgba?GL_RGBA:GL_RGB, width, height, 0, rgba?GL_RGBA:GL_RGB, GL_UNSIGNED_BYTE, data);
     check_gl_error();
 }
 
@@ -73,13 +76,13 @@ void reshape (int w, int h) {
 
 
 
-ResultWindow::ResultWindow(int &argc, char **argv, void *data, int width, int height){
+ResultWindow::ResultWindow(int &argc, char **argv, void *data, int width, int height, bool rgba){
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_DOUBLE);
     glutInitWindowSize(width, height);
     glutCreateWindow("Parallel Computing Playground!");
     glutDisplayFunc(displayCall);
     glutReshapeFunc (reshape);
-    createTexture(data, width, height);
+    createTexture(data, width, height, rgba);
     glutMainLoop();
 }

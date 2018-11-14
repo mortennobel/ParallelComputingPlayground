@@ -15,34 +15,21 @@
 		5AC1E29117133A5E007C4CBF /* MandelbrotCpp11Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E28F17133A5E007C4CBF /* MandelbrotCpp11Thread.cpp */; };
 		5AC1E29417134625007C4CBF /* MandelbrotGCD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E29217134625007C4CBF /* MandelbrotGCD.cpp */; };
 		5AC1E2971713512E007C4CBF /* MandelbrotOpenMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E2951713512D007C4CBF /* MandelbrotOpenMP.cpp */; };
-		5AC1E29A1713524A007C4CBF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A6A533816CD92B7001C3DE6 /* main.cpp */; };
-		5AC1E29B1713524A007C4CBF /* ResultWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AE2514A16D2C104003D0D33 /* ResultWindow.cpp */; };
-		5AC1E29C1713524A007C4CBF /* AbstractMandelbrot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AE2515516D2CD69003D0D33 /* AbstractMandelbrot.cpp */; };
-		5AC1E29D1713524A007C4CBF /* MandelbrotCpp11Thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E28F17133A5E007C4CBF /* MandelbrotCpp11Thread.cpp */; };
-		5AC1E29E1713524A007C4CBF /* MandelbrotGCD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E29217134625007C4CBF /* MandelbrotGCD.cpp */; };
-		5AC1E29F1713524A007C4CBF /* MandelbrotOpenMP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E2951713512D007C4CBF /* MandelbrotOpenMP.cpp */; };
-		5AC1E2A11713524A007C4CBF /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6A534116CD9306001C3DE6 /* GLUT.framework */; };
-		5AC1E2A21713524A007C4CBF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A6A534216CD9306001C3DE6 /* OpenGL.framework */; };
 		5AC1E2AB171356F7007C4CBF /* MandelbrotPOSIXThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E2A9171356F7007C4CBF /* MandelbrotPOSIXThread.cpp */; };
-		5AC1E2AC17135E36007C4CBF /* MandelbrotPOSIXThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E2A9171356F7007C4CBF /* MandelbrotPOSIXThread.cpp */; };
 		5AC1E2AF17147E46007C4CBF /* MandelbrotOpenCL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E2AD17147E46007C4CBF /* MandelbrotOpenCL.cpp */; };
-		5AC1E2B417149943007C4CBF /* mandelbrot.cl in Sources */ = {isa = PBXBuildFile; fileRef = 5AC1E2B217149943007C4CBF /* mandelbrot.cl */; };
 		5AC1E2B6171499AD007C4CBF /* mandelbrot.cl in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AC1E2B217149943007C4CBF /* mandelbrot.cl */; };
 		5AE2514C16D2C104003D0D33 /* ResultWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AE2514A16D2C104003D0D33 /* ResultWindow.cpp */; };
 		5AE2515616D2CD69003D0D33 /* AbstractMandelbrot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AE2515516D2CD69003D0D33 /* AbstractMandelbrot.cpp */; };
+		FEC26A9C219A0EF00031E422 /* MandelbrotMetal.mm in Sources */ = {isa = PBXBuildFile; fileRef = FEC26A9B219A0EF00031E422 /* MandelbrotMetal.mm */; };
+		FEC26AA0219A11730031E422 /* MandelbrotSequential.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEC26A9E219A11730031E422 /* MandelbrotSequential.cpp */; };
+		FEC26AA2219A16250031E422 /* Mandelbrot.metal in Sources */ = {isa = PBXBuildFile; fileRef = FEC26AA1219A16250031E422 /* Mandelbrot.metal */; };
+		FEC26AA7219C5BEA0031E422 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC26AA4219C5BEA0031E422 /* Metal.framework */; };
+		FEC26AA8219C5BEA0031E422 /* MetalPerformanceShaders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC26AA5219C5BEA0031E422 /* MetalPerformanceShaders.framework */; };
+		FEC26AA9219C5BEA0031E422 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC26AA6219C5BEA0031E422 /* MetalKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		5A6A533316CD92B7001C3DE6 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		5AC1E2A31713524A007C4CBF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -74,7 +61,6 @@
 		5AC1E29317134625007C4CBF /* MandelbrotGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MandelbrotGCD.h; sourceTree = "<group>"; };
 		5AC1E2951713512D007C4CBF /* MandelbrotOpenMP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MandelbrotOpenMP.cpp; sourceTree = "<group>"; };
 		5AC1E2961713512E007C4CBF /* MandelbrotOpenMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MandelbrotOpenMP.h; sourceTree = "<group>"; };
-		5AC1E2A81713524A007C4CBF /* ParallelComputingPlayground copy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ParallelComputingPlayground copy"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC1E2A9171356F7007C4CBF /* MandelbrotPOSIXThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MandelbrotPOSIXThread.cpp; sourceTree = "<group>"; };
 		5AC1E2AA171356F7007C4CBF /* MandelbrotPOSIXThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MandelbrotPOSIXThread.h; sourceTree = "<group>"; };
 		5AC1E2AD17147E46007C4CBF /* MandelbrotOpenCL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MandelbrotOpenCL.cpp; sourceTree = "<group>"; };
@@ -85,6 +71,14 @@
 		5AE2514B16D2C104003D0D33 /* ResultWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultWindow.h; sourceTree = "<group>"; };
 		5AE2514E16D2C460003D0D33 /* AbstractMandelbrot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractMandelbrot.h; sourceTree = "<group>"; };
 		5AE2515516D2CD69003D0D33 /* AbstractMandelbrot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractMandelbrot.cpp; sourceTree = "<group>"; };
+		FEC26A9B219A0EF00031E422 /* MandelbrotMetal.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = MandelbrotMetal.mm; sourceTree = "<group>"; };
+		FEC26A9D219A0FE10031E422 /* MandelbrotMetal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MandelbrotMetal.h; sourceTree = "<group>"; };
+		FEC26A9E219A11730031E422 /* MandelbrotSequential.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MandelbrotSequential.cpp; sourceTree = "<group>"; };
+		FEC26A9F219A11730031E422 /* MandelbrotSequential.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MandelbrotSequential.h; sourceTree = "<group>"; };
+		FEC26AA1219A16250031E422 /* Mandelbrot.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Mandelbrot.metal; sourceTree = "<group>"; };
+		FEC26AA4219C5BEA0031E422 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		FEC26AA5219C5BEA0031E422 /* MetalPerformanceShaders.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalPerformanceShaders.framework; path = System/Library/Frameworks/MetalPerformanceShaders.framework; sourceTree = SDKROOT; };
+		FEC26AA6219C5BEA0031E422 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,18 +86,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC26AA7219C5BEA0031E422 /* Metal.framework in Frameworks */,
+				FEC26AA8219C5BEA0031E422 /* MetalPerformanceShaders.framework in Frameworks */,
+				FEC26AA9219C5BEA0031E422 /* MetalKit.framework in Frameworks */,
 				5A7B886B1714AB2900072698 /* OpenCL.framework in Frameworks */,
 				5A6A534316CD9306001C3DE6 /* GLUT.framework in Frameworks */,
 				5A6A534416CD9306001C3DE6 /* OpenGL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AC1E2A01713524A007C4CBF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AC1E2A11713524A007C4CBF /* GLUT.framework in Frameworks */,
-				5AC1E2A21713524A007C4CBF /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +106,7 @@
 				5A6A534216CD9306001C3DE6 /* OpenGL.framework */,
 				5A6A533716CD92B7001C3DE6 /* ParallelComputingPlayground */,
 				5A6A533616CD92B7001C3DE6 /* Products */,
+				FEC26AA3219C5BEA0031E422 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +114,6 @@
 			isa = PBXGroup;
 			children = (
 				5A6A533516CD92B7001C3DE6 /* ParallelComputingPlayground */,
-				5AC1E2A81713524A007C4CBF /* ParallelComputingPlayground copy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,8 +137,23 @@
 				5AC1E2AD17147E46007C4CBF /* MandelbrotOpenCL.cpp */,
 				5AC1E2AE17147E46007C4CBF /* MandelbrotOpenCL.h */,
 				5AC1E2B217149943007C4CBF /* mandelbrot.cl */,
+				FEC26A9B219A0EF00031E422 /* MandelbrotMetal.mm */,
+				FEC26A9D219A0FE10031E422 /* MandelbrotMetal.h */,
+				FEC26A9E219A11730031E422 /* MandelbrotSequential.cpp */,
+				FEC26A9F219A11730031E422 /* MandelbrotSequential.h */,
+				FEC26AA1219A16250031E422 /* Mandelbrot.metal */,
 			);
 			path = ParallelComputingPlayground;
+			sourceTree = "<group>";
+		};
+		FEC26AA3219C5BEA0031E422 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEC26AA4219C5BEA0031E422 /* Metal.framework */,
+				FEC26AA6219C5BEA0031E422 /* MetalKit.framework */,
+				FEC26AA5219C5BEA0031E422 /* MetalPerformanceShaders.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,30 +177,13 @@
 			productReference = 5A6A533516CD92B7001C3DE6 /* ParallelComputingPlayground */;
 			productType = "com.apple.product-type.tool";
 		};
-		5AC1E2981713524A007C4CBF /* ParallelComputingPlayground_GCC */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AC1E2A51713524A007C4CBF /* Build configuration list for PBXNativeTarget "ParallelComputingPlayground_GCC" */;
-			buildPhases = (
-				5AC1E2991713524A007C4CBF /* Sources */,
-				5AC1E2A01713524A007C4CBF /* Frameworks */,
-				5AC1E2A31713524A007C4CBF /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ParallelComputingPlayground_GCC;
-			productName = ParallelComputingPlayground;
-			productReference = 5AC1E2A81713524A007C4CBF /* ParallelComputingPlayground copy */;
-			productType = "com.apple.product-type.tool";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5A6A532D16CD92B7001C3DE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = morten;
 			};
 			buildConfigurationList = 5A6A533016CD92B7001C3DE6 /* Build configuration list for PBXProject "ParallelComputingPlayground" */;
@@ -213,7 +199,6 @@
 			projectRoot = "";
 			targets = (
 				5A6A533416CD92B7001C3DE6 /* ParallelComputingPlayground */,
-				5AC1E2981713524A007C4CBF /* ParallelComputingPlayground_GCC */,
 			);
 		};
 /* End PBXProject section */
@@ -224,29 +209,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A7B886C1714AD3200072698 /* mandelbrot.cl in Sources */,
+				FEC26AA0219A11730031E422 /* MandelbrotSequential.cpp in Sources */,
 				5A6A533916CD92B7001C3DE6 /* main.cpp in Sources */,
 				5AE2514C16D2C104003D0D33 /* ResultWindow.cpp in Sources */,
+				FEC26A9C219A0EF00031E422 /* MandelbrotMetal.mm in Sources */,
 				5AE2515616D2CD69003D0D33 /* AbstractMandelbrot.cpp in Sources */,
 				5AC1E29117133A5E007C4CBF /* MandelbrotCpp11Thread.cpp in Sources */,
 				5AC1E29417134625007C4CBF /* MandelbrotGCD.cpp in Sources */,
 				5AC1E2971713512E007C4CBF /* MandelbrotOpenMP.cpp in Sources */,
+				FEC26AA2219A16250031E422 /* Mandelbrot.metal in Sources */,
 				5AC1E2AB171356F7007C4CBF /* MandelbrotPOSIXThread.cpp in Sources */,
 				5AC1E2AF17147E46007C4CBF /* MandelbrotOpenCL.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AC1E2991713524A007C4CBF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AC1E2AC17135E36007C4CBF /* MandelbrotPOSIXThread.cpp in Sources */,
-				5AC1E29A1713524A007C4CBF /* main.cpp in Sources */,
-				5AC1E29B1713524A007C4CBF /* ResultWindow.cpp in Sources */,
-				5AC1E29C1713524A007C4CBF /* AbstractMandelbrot.cpp in Sources */,
-				5AC1E29D1713524A007C4CBF /* MandelbrotCpp11Thread.cpp in Sources */,
-				5AC1E29E1713524A007C4CBF /* MandelbrotGCD.cpp in Sources */,
-				5AC1E29F1713524A007C4CBF /* MandelbrotOpenMP.cpp in Sources */,
-				5AC1E2B417149943007C4CBF /* mandelbrot.cl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,18 +230,34 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -277,7 +266,9 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
@@ -289,21 +280,38 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
@@ -313,6 +321,9 @@
 		5A6A533F16CD92B7001C3DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				ENABLE_OPENMP_SUPPORT = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -326,34 +337,13 @@
 		5A6A534016CD92B7001C3DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				ENABLE_OPENMP_SUPPORT = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_VERSION = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		5AC1E2A61713524A007C4CBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_OPENMP_SUPPORT = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-					NO_CPP11,
-				);
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				PRODUCT_NAME = "ParallelComputingPlayground copy";
-			};
-			name = Debug;
-		};
-		5AC1E2A71713524A007C4CBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_OPENMP_SUPPORT = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = NO_CPP11;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				PRODUCT_NAME = "ParallelComputingPlayground copy";
 			};
 			name = Release;
 		};
@@ -374,15 +364,6 @@
 			buildConfigurations = (
 				5A6A533F16CD92B7001C3DE6 /* Debug */,
 				5A6A534016CD92B7001C3DE6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AC1E2A51713524A007C4CBF /* Build configuration list for PBXNativeTarget "ParallelComputingPlayground_GCC" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AC1E2A61713524A007C4CBF /* Debug */,
-				5AC1E2A71713524A007C4CBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,7 +10,7 @@
 
 using namespace std;
 
-RGB *MandelbrotOpenMP::createData(int width, int height){
+void *MandelbrotOpenMP::createData(int width, int height){
     RGB * res = new RGB[width * height];
    
     #pragma omp parallel for

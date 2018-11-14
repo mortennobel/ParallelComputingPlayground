@@ -15,7 +15,7 @@
 
 class MandelbrotOpenMP : public AbstractMandelbrot {
 public:
-    virtual RGB *createData(int width, int height);
+    void *createData(int width, int height) override;
 };
 
 #endif /* defined(__ParallelComputingPlayground__MandelbrotOpenMP__) */

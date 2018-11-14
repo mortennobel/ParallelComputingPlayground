@@ -25,7 +25,9 @@ public:
     AbstractMandelbrot(){}
     virtual ~AbstractMandelbrot(){}
     
-    virtual RGB *createData(int width, int height);
+    virtual void *createData(int width, int height) = 0;
+    
+    virtual int alignmentInBytes();
     
     static int mandel_iterations;
 protected:

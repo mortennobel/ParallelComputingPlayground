@@ -16,7 +16,7 @@
 class MandelbrotCpp11Thread : public AbstractMandelbrot {
 public:
 #ifndef NO_CPP11
-    virtual RGB *createData(int width, int height);
+    void *createData(int width, int height) override;
 #endif
 };
 
