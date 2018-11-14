@@ -4,7 +4,7 @@ ParallelComputingPlayground
 Shows different programming techniques for parallel computing on CPU and GPU.
 
 ## Purpose
-The idea here is to compute a Mandelbrot-fractal using different C++ techniques and libraries. The idea here is to show the usage of the code.
+The idea here is to compute a Mandelbrot-fractal using different C++ techniques and libraries. The idea here is to show the usage of the code. Note that the code is not optimized for performance and should not be used for benchmarking.
 
 The following techniques and libraries are currently implemented:
  - C++11 Thread
@@ -12,6 +12,7 @@ The following techniques and libraries are currently implemented:
  - OpenMP
  - POSIX Threads
  - OpenCL
+ - Metal compute shader
  
  ## License (MIT)
  Copyright (c) 2013 Morten Nobel-Joergensen
